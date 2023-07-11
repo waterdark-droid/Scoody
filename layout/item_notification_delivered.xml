@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#E6E6E6"
+    app:cardCornerRadius="15sp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/notification_blue_design"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/package_delivered_icon"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="product "
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/sora_semibold"
+            android:textColor="#F35050"
+            android:textSize="16sp"
+            />
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delivered"
+            android:fontFamily="@font/sora_medium"
+            android:textSize="14sp"
+            />
+
+        <Space
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

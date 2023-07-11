@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="110.5dp"
+    android:layout_height="132.6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    >
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/background"
+        android:background="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="93.6dp"
+        android:layout_height="93.6dp"
+
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/category_bottom"
+        android:layout_height="40dp"
+        android:layout_width="110.5dp"
+        android:layout_gravity="bottom"
+        android:alpha="0.75"
+        android:background="@drawable/category_button_bottom_design"
+        />
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sora_medium"
+        android:text="Groceries"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="12dp"
+        android:textSize="12sp"
+        />
+
+</androidx.cardview.widget.CardView>

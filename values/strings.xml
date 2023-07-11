@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Scoody</string>
+    <string name="enter_details">Enter your details</string>
+    <string name="h_no">House number</string>
+    <string name="s_l">Street/Lane</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pin">Pin Code</string>
+    <string name="category">Category</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="receiver_mn">Receiver mobile number</string>
+    <string name="receiver_name">Receiver name</string>
+    <string name="st_time">Starting time</string>
+    <string name="end_time">Ending time</string>
+    <string name="notify">Notification</string>
+    <string name="star">*</string>
+
+</resources>

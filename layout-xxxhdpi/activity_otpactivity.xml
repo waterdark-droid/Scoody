@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".OTPActivity">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sora_bold"
+        android:text="OTP Verification"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.152"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_medium"
+            android:text="Code sent to "
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+918220974362"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/otp_icon"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.4">
+
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:background="@drawable/otp_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:background="@drawable/otp_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:background="@drawable/otp_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:background="@drawable/otp_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:background="@drawable/otp_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="43dp"
+            android:layout_height="51dp"
+            android:background="@drawable/otp_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sora_medium"
+        android:text="time"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintVertical_bias="0.117"
+        >
+        <TextView
+            android:id="@+id/resend_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_medium"
+            android:text="Didn't receive code? "
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/resend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_medium"
+            android:text="Resend."
+            android:textColor="#FF2E2E"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.067"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/sora_medium"
+            android:text="Verify"
+            android:textAllCaps="false"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:elevation="11dp"
+            android:visibility="gone"
+
+            />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

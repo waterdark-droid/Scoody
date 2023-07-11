@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDeliveryActivity">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/appbar_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5E9CF7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/baseline_add_24"
+            android:scaleX="1.3"
+            android:scaleY="1.3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_regular"
+            android:paddingStart="105dp"
+            android:text="New Delivery"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora_medium"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gridView"
+                android:layout_width="380dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/category_button_design"
+
+                android:padding="5dp"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="57dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/othersBtn"
+                    android:layout_width="90dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/others_button_unselected"
+                    android:fontFamily="@font/sora_medium"
+                    android:text="Others"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=":"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/others_edit_text"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:enabled="false"
+                        android:layout_marginStart="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/others_edittext_design" />
+                    <TextView
+                        android:id="@+id/others_required"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="#FF3131"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sora_medium"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/receiver_name"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/receiver_name_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FF3131"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/receiver_name_edit_text"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:fontFamily="@font/sora_medium"
+                android:padding="5dp"
+                android:maxLength="20"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:background="@drawable/others_edittext_design"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sora_medium"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/receiver_mn"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/receiver_mobile_no_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FF3131"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/receiver_mobile_no_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:fontFamily="@font/sora_medium"
+                android:padding="5dp"
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:background="@drawable/others_edittext_design"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sora_medium"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/source"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/source_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FF3131"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/source_edit_text"
+                    android:layout_width="290dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|left"
+                    android:fontFamily="@font/sora_medium"
+                    android:padding="5dp"
+                    android:enabled="false"
+                    android:textColor="#444444"
+                    android:textSize="14sp"
+                    android:background="@drawable/others_edittext_design"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="5dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/source_edit"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:background="@drawable/white_edittext_bg"
+                        android:src="@drawable/baseline_edit_24"
+                        />
+
+                    <!--                    <ImageButton-->
+                    <!--                        android:id="@+id/set_custom_source_location"-->
+                    <!--                        android:layout_width="35dp"-->
+                    <!--                        android:layout_height="35dp"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:background="@drawable/white_edittext_bg"-->
+                    <!--                        android:foreground="?attr/selectableItemBackground"-->
+                    <!--                        android:src="@drawable/baseline_location_on_24"-->
+                    <!--                        />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sora_medium"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/destination"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/destination_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FF3131"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/destination_edit_text"
+                    android:layout_width="290dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|left"
+                    android:fontFamily="@font/sora_medium"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:background="@drawable/others_edittext_design"
+                    />
+
+                <!--        <LinearLayout-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:orientation="vertical"-->
+                <!--            android:layout_marginStart="5dp"-->
+                <!--            >-->
+                <!--                <ImageButton-->
+                <!--                    android:id="@+id/set_custom_destination_location"-->
+                <!--                    android:layout_width="35dp"-->
+                <!--                    android:layout_height="35dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:background="@drawable/white_edittext_bg"-->
+                <!--                    android:foreground="?attr/selectableItemBackground"-->
+                <!--                    android:src="@drawable/baseline_location_on_24"-->
+                <!--                    />-->
+                <!--        </LinearLayout>-->
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/button_style"
+                android:text="Submit"
+                android:fontFamily="@font/sora_medium"
+                android:textAllCaps="false"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
